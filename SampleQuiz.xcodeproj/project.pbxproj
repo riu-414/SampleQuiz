@@ -13,6 +13,11 @@
 		400D3FBE27800C3F00A968AA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 400D3FBC27800C3F00A968AA /* Main.storyboard */; };
 		400D3FC027800C4200A968AA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 400D3FBF27800C4200A968AA /* Assets.xcassets */; };
 		400D3FC327800C4200A968AA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 400D3FC127800C4200A968AA /* LaunchScreen.storyboard */; };
+		400D3FCB27800DE500A968AA /* QuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 400D3FCA27800DE500A968AA /* QuizViewController.swift */; };
+		400D3FCD27800EA800A968AA /* ScoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 400D3FCC27800EA800A968AA /* ScoreViewController.swift */; };
+		400D3FCF2780136C00A968AA /* quiz.csv in Resources */ = {isa = PBXBuildFile; fileRef = 400D3FCE2780136C00A968AA /* quiz.csv */; };
+		400D3FD32780760200A968AA /* correct.png in Resources */ = {isa = PBXBuildFile; fileRef = 400D3FD12780760100A968AA /* correct.png */; };
+		400D3FD42780760200A968AA /* incorrect.png in Resources */ = {isa = PBXBuildFile; fileRef = 400D3FD22780760100A968AA /* incorrect.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +29,11 @@
 		400D3FBF27800C4200A968AA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		400D3FC227800C4200A968AA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		400D3FC427800C4300A968AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		400D3FCA27800DE500A968AA /* QuizViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizViewController.swift; sourceTree = "<group>"; };
+		400D3FCC27800EA800A968AA /* ScoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreViewController.swift; sourceTree = "<group>"; };
+		400D3FCE2780136C00A968AA /* quiz.csv */ = {isa = PBXFileReference; lastKnownFileType = text; path = quiz.csv; sourceTree = "<group>"; };
+		400D3FD12780760100A968AA /* correct.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = correct.png; sourceTree = "<group>"; };
+		400D3FD22780760100A968AA /* incorrect.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = incorrect.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,11 +70,24 @@
 				400D3FB827800C3F00A968AA /* SceneDelegate.swift */,
 				400D3FBA27800C3F00A968AA /* ViewController.swift */,
 				400D3FBC27800C3F00A968AA /* Main.storyboard */,
+				400D3FCE2780136C00A968AA /* quiz.csv */,
+				400D3FCC27800EA800A968AA /* ScoreViewController.swift */,
+				400D3FCA27800DE500A968AA /* QuizViewController.swift */,
+				400D3FD02780760100A968AA /* image 3 */,
 				400D3FBF27800C4200A968AA /* Assets.xcassets */,
 				400D3FC127800C4200A968AA /* LaunchScreen.storyboard */,
 				400D3FC427800C4300A968AA /* Info.plist */,
 			);
 			path = SampleQuiz;
+			sourceTree = "<group>";
+		};
+		400D3FD02780760100A968AA /* image 3 */ = {
+			isa = PBXGroup;
+			children = (
+				400D3FD12780760100A968AA /* correct.png */,
+				400D3FD22780760100A968AA /* incorrect.png */,
+			);
+			path = "image 3";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,9 +148,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				400D3FD32780760200A968AA /* correct.png in Resources */,
+				400D3FD42780760200A968AA /* incorrect.png in Resources */,
 				400D3FC327800C4200A968AA /* LaunchScreen.storyboard in Resources */,
 				400D3FC027800C4200A968AA /* Assets.xcassets in Resources */,
 				400D3FBE27800C3F00A968AA /* Main.storyboard in Resources */,
+				400D3FCF2780136C00A968AA /* quiz.csv in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -140,7 +166,9 @@
 			files = (
 				400D3FBB27800C3F00A968AA /* ViewController.swift in Sources */,
 				400D3FB727800C3F00A968AA /* AppDelegate.swift in Sources */,
+				400D3FCD27800EA800A968AA /* ScoreViewController.swift in Sources */,
 				400D3FB927800C3F00A968AA /* SceneDelegate.swift in Sources */,
+				400D3FCB27800DE500A968AA /* QuizViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -294,6 +322,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -321,6 +350,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
