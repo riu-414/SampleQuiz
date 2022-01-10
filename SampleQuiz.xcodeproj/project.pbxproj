@@ -21,6 +21,8 @@
 		400D3FD62780B0B500A968AA /* SelectLevelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 400D3FD52780B0B500A968AA /* SelectLevelViewController.swift */; };
 		408D88D52780B52D00F22824 /* quiz2.csv in Resources */ = {isa = PBXBuildFile; fileRef = 408D88D42780B52D00F22824 /* quiz2.csv */; };
 		408D88D72780B54C00F22824 /* quiz3.csv in Resources */ = {isa = PBXBuildFile; fileRef = 408D88D62780B54B00F22824 /* quiz3.csv */; };
+		4C37E75B2787407B002503E7 /* launchImageView.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C37E75A2787407B002503E7 /* launchImageView.png */; };
+		C8F8FDE6084139DE6A4DF944 /* Pods_SampleQuiz.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB2307D4C1B6C043CB08B75F /* Pods_SampleQuiz.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +42,10 @@
 		400D3FD52780B0B500A968AA /* SelectLevelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectLevelViewController.swift; sourceTree = "<group>"; };
 		408D88D42780B52D00F22824 /* quiz2.csv */ = {isa = PBXFileReference; lastKnownFileType = text; path = quiz2.csv; sourceTree = "<group>"; };
 		408D88D62780B54B00F22824 /* quiz3.csv */ = {isa = PBXFileReference; lastKnownFileType = text; path = quiz3.csv; sourceTree = "<group>"; };
+		4C37E75A2787407B002503E7 /* launchImageView.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = launchImageView.png; sourceTree = "<group>"; };
+		7D7446A12F10CB581143DDC6 /* Pods-SampleQuiz.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SampleQuiz.release.xcconfig"; path = "Target Support Files/Pods-SampleQuiz/Pods-SampleQuiz.release.xcconfig"; sourceTree = "<group>"; };
+		96754E433B7FFF4F0C472E06 /* Pods-SampleQuiz.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SampleQuiz.debug.xcconfig"; path = "Target Support Files/Pods-SampleQuiz/Pods-SampleQuiz.debug.xcconfig"; sourceTree = "<group>"; };
+		AB2307D4C1B6C043CB08B75F /* Pods_SampleQuiz.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SampleQuiz.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,17 +53,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C8F8FDE6084139DE6A4DF944 /* Pods_SampleQuiz.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3E4A599E56E475697CDEA8FA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AB2307D4C1B6C043CB08B75F /* Pods_SampleQuiz.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		400D3FAA27800C3F00A968AA = {
 			isa = PBXGroup;
 			children = (
 				400D3FB527800C3F00A968AA /* SampleQuiz */,
 				400D3FB427800C3F00A968AA /* Products */,
+				A72E11B37F5AD5F4CDDF2F1F /* Pods */,
+				3E4A599E56E475697CDEA8FA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -86,6 +103,7 @@
 				400D3FBF27800C4200A968AA /* Assets.xcassets */,
 				400D3FC127800C4200A968AA /* LaunchScreen.storyboard */,
 				400D3FC427800C4300A968AA /* Info.plist */,
+				4C37E7592787407B002503E7 /* launchImage */,
 			);
 			path = SampleQuiz;
 			sourceTree = "<group>";
@@ -99,6 +117,23 @@
 			path = "image 3";
 			sourceTree = "<group>";
 		};
+		4C37E7592787407B002503E7 /* launchImage */ = {
+			isa = PBXGroup;
+			children = (
+				4C37E75A2787407B002503E7 /* launchImageView.png */,
+			);
+			path = launchImage;
+			sourceTree = "<group>";
+		};
+		A72E11B37F5AD5F4CDDF2F1F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				96754E433B7FFF4F0C472E06 /* Pods-SampleQuiz.debug.xcconfig */,
+				7D7446A12F10CB581143DDC6 /* Pods-SampleQuiz.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -106,9 +141,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 400D3FC727800C4300A968AA /* Build configuration list for PBXNativeTarget "SampleQuiz" */;
 			buildPhases = (
+				24011F35C508F03D25050B84 /* [CP] Check Pods Manifest.lock */,
 				400D3FAF27800C3F00A968AA /* Sources */,
 				400D3FB027800C3F00A968AA /* Frameworks */,
 				400D3FB127800C3F00A968AA /* Resources */,
+				31ADBA5CBA2681E5214A457F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -157,6 +194,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C37E75B2787407B002503E7 /* launchImageView.png in Resources */,
 				408D88D52780B52D00F22824 /* quiz2.csv in Resources */,
 				400D3FD32780760200A968AA /* correct.png in Resources */,
 				400D3FD42780760200A968AA /* incorrect.png in Resources */,
@@ -169,6 +207,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		24011F35C508F03D25050B84 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SampleQuiz-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		31ADBA5CBA2681E5214A457F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SampleQuiz/Pods-SampleQuiz-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SampleQuiz/Pods-SampleQuiz-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SampleQuiz/Pods-SampleQuiz-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		400D3FAF27800C3F00A968AA /* Sources */ = {
@@ -324,6 +404,7 @@
 		};
 		400D3FC827800C4300A968AA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 96754E433B7FFF4F0C472E06 /* Pods-SampleQuiz.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -334,7 +415,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -346,12 +427,13 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		400D3FC927800C4300A968AA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7D7446A12F10CB581143DDC6 /* Pods-SampleQuiz.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -362,7 +444,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -374,7 +456,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
